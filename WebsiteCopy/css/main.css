@@ -1,0 +1,167 @@
+:root {
+    --accent-color: rgb(21, 106, 163);
+    --dark-gray-color: rgb(50, 50, 50);
+    --medium-gray-color: rgb(100, 100, 100);
+    --light-gray-color: rgb(200, 200, 200);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav {
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+
+.nav li {
+    font-size: 0.8rem;
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+    padding: 0.3rem;
+}
+
+.partners-nav li:hover {
+    background-color: var(--dark-gray-color);
+}
+
+.partners-nav {
+    color: var(--light-gray-color);
+
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: black;
+    border-bottom-style: solid;
+    border-bottom-color: var(--accent-color);
+    border-bottom-width: 0.3em;
+    
+}
+
+.nav-icon {
+    height: 3.5rem;
+}
+
+#nav-bar-logo {
+    width: 10rem;
+}
+
+.nav-description {
+    font-size: 0.9rem;
+    color: var(--medium-gray-color);
+    text-transform: none;
+}
+
+.nav-separator {
+    margin-left: 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+    border-left:   1px solid;
+}
+
+.nav-logo-search li {
+    vertical-align: middle;
+}
+
+.nav-logo {
+    float: left;
+}
+
+.nav-search-area {
+    padding-top: 0.7rem;
+    float: right;
+}
+
+.nav-bar {
+    font-weight: bold;
+}
+
+.nav-bar li:hover {
+    color: var(--accent-color);
+}
+
+.div-separator {
+    padding: 1rem 0;
+    
+    border-bottom: 1px solid;
+}
+
+.separator {
+    border-color: var(--light-gray-color);
+}
+
+.latest-grid {
+    width: 66rem;
+    margin: 0 auto;
+}
+
+.latest-grid img {
+    width: 20rem;
+}
+
+.topic {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+.grid-item {
+    width: 20rem;
+    padding: 0.5rem;
+    display: inline;
+    float: left;
+}
+
+.grid-item li {
+    padding: 0.3rem;
+}
+
+.grid-item li:hover {
+    text-decoration: underline;
+}
+
+.title {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: small;
+    color: var(--medium-gray-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+aside {
+    position: absolute;
+    right: 5rem;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    border-left: 1px solid var(--light-gray-color);
+    max-width: 30%;
+}
+
+aside p {
+    color: var(--medium-gray-color);
+    padding-bottom: 1rem;
+}
+
+aside img {
+    width: 25rem;
+}
+
