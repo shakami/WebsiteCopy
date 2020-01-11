@@ -1,0 +1,83 @@
+﻿
+h1 {
+    padding: 2rem 0;
+}
+
+.tooltip {
+    display: inline-flex;
+}
+
+.tooltip img {
+    vertical-align: auto;
+    width: 2rem;
+}
+
+.share-tooltip img {
+    border: solid 1px var(--light-gray-color);
+    width: 2rem;
+}
+
+.article-stats {
+    text-align: center;
+}
+
+
+.article-stats img {
+    width: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+main {
+    margin-right: 30%;
+    border-right: 1px solid var(--light-gray-color);
+}
+
+#article-image img {
+    width: 52rem;
+}
+
+#tooltip-author-image {
+    width: 3rem;
+    padding: 0 0.6rem;
+}
+
+.date {
+    color: var(--medium-gray-color);
+    font-size: 0.9rem;
+}
+
+.tooltip-topic {
+    text-transform: uppercase;
+    color: black;
+}
+
+.tooltip-topic:hover {
+    text-decoration: underline;
+}
+
+article a {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+article a:hover {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.share {
+    margin-left: 6rem;
+}
+
+.share-subscribe img {
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.share-subscribe span {
+    padding-right: 0.5rem;
+}
+
+.share-subscribe {
+    border: 1px solid var(--light-gray-color);
+    padding: 0 0.5rem;
+}

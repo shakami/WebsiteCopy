@@ -14,25 +14,39 @@
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .clear {
     clear: both;
 }
 
-.nav {
-    padding-left: 4rem;
-    padding-right: 4rem;
-
+.float-left {
+    float: left;
 }
 
-.nav li {
-    font-size: 0.8rem;
-    list-style: none;
-    display: inline;
+.float-right {
+    float: right;
+}
+
+.block-text {
     text-transform: uppercase;
-    padding: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
+
+.nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+    .nav li {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        list-style: none;
+        display: inline;
+        padding: 0.3rem;
+    }
 
 .partners-nav li:hover {
     background-color: var(--dark-gray-color);
@@ -40,14 +54,12 @@ a {
 
 .partners-nav {
     color: var(--light-gray-color);
-
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     background-color: black;
     border-bottom-style: solid;
     border-bottom-color: var(--accent-color);
     border-bottom-width: 0.3em;
-    
 }
 
 .nav-icon {
@@ -67,21 +79,18 @@ a {
 .nav-separator {
     margin-left: 0.5rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    border-left:   1px solid;
+    border-left: 1px solid;
 }
 
 .nav-logo-search li {
     vertical-align: middle;
 }
 
-.nav-logo {
-    float: left;
+.nav-logo-search {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-.nav-search-area {
-    padding-top: 0.7rem;
-    float: right;
-}
 
 .nav-bar {
     font-weight: bold;
@@ -91,9 +100,17 @@ a {
     color: var(--accent-color);
 }
 
+.nav-bar .active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.nav-bar .active:hover {
+    color: white;
+}
+
 .div-separator {
-    padding: 1rem 0;
-    
+    margin: 1rem 0;
     border-bottom: 1px solid;
 }
 
@@ -101,12 +118,20 @@ a {
     border-color: var(--light-gray-color);
 }
 
-.latest-grid {
-    width: 66rem;
-    margin: 0 auto;
+.no-margin {
+    margin: 0;
 }
 
-.latest-grid img {
+.grid-container {
+    width: 66rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.grid-container img {
     width: 20rem;
 }
 
@@ -119,9 +144,6 @@ a {
 
 .grid-item {
     width: 20rem;
-    padding: 0.5rem;
-    display: inline;
-    float: left;
 }
 
 .grid-item li {
@@ -152,7 +174,6 @@ aside {
     right: 5rem;
     padding-left: 1rem;
     padding-top: 4rem;
-    border-left: 1px solid var(--light-gray-color);
     max-width: 30%;
 }
 
@@ -165,3 +186,126 @@ aside img {
     width: 25rem;
 }
 
+.main-container {
+    border-right: 1px solid var(--light-gray-color);
+    margin-right: 28rem;
+    padding-bottom: 2rem;
+}
+
+article {
+    padding: 2rem 0;
+    margin-left: 5rem;
+    line-height: 1.7rem;
+}
+
+article .title {
+    font-size: 1.5rem;
+}
+
+article p {
+    font-family: ElizabethSerif, Georgia, serif;
+    padding: 1rem;
+}
+
+article img {
+    width: 40rem;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.subscribe {
+    background-color: var(--light-gray-color);
+    padding: 1rem;
+}
+
+.subscribe li {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+}
+
+#subscribe-logo {
+    width: 7rem;
+}
+
+#email-input {
+    border: none;
+    outline: none;
+    background-color: var(--light-gray-color);
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 20rem;
+    padding: 0.5rem;
+}
+
+#email-input:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+#subscribe-button {
+    background-color: var(--medium-gray-color);
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+}
+
+#subscribe-button:hover {
+    background-color: var(--dark-gray-color);
+}
+
+.subscribe a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#terms {
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+    color: var(--medium-gray-color);
+}
+
+.site-footer {
+    padding: 2rem;
+    background-color: var(--dark-gray-color);
+    color: var(--medium-gray-color);
+}
+
+.site-footer li {
+    padding: 1rem;
+}
+
+.nav-social-icons li {
+    padding: 0;
+}
+
+.nav-social-icons img {
+    width: 2rem;
+}
+
+.nav-social-icons img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.footer-links li {
+    font-size: 0.9rem;
+    text-transform: none;
+}
+
+.partner-icons img {
+    width: 1.5rem;
+    filter: invert(60%);
+}

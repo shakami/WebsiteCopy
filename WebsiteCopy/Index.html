@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
@@ -32,14 +32,14 @@
             </ul>
         </nav>
         <nav class="nav nav-logo-search">
-            <div class="nav-logo">
+            <div class="nav-logo float-left">
                 <ul>
                     <li><img id="nav-bar-logo" src="img/logo.png"></li>
                     <li><span class="separator nav-separator"></span></li>
                     <li><span class="nav-description">Do everything better</span></li>
                 </ul>
             </div>
-            <div class="nav-search-area">
+            <div class="nav-search-area float-right">
                 <ul>
                     <li><img class="nav-icon" src="img/search-graphic.png"></li>
                     <li><img class="nav-icon" src="img/subscribe-graphic.png"></li>
@@ -53,7 +53,7 @@
         <div class="clear"></div>
         <nav class="nav nav-bar">
             <ul>
-                <li><a>Latest</a></li>
+                <li class="active"><a>Latest</a></li>
                 <li><a>Skillet</a></li>
                 <li><a>Two Cents</a></li>
                 <li><a>Vitals</a></li>
@@ -68,60 +68,47 @@
     </header>
 
     <main>
-        <section class="latest-grid">
-            <ul>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-1.jpg"></li>
-                        <li class="topic"><a href="/test">Entertaining</a></li>
-                        <li class="title"><a href="/test">Test Your Trivia Knowledge Using This Database of 'Jeopardy!' Questions</a></li>
-                        <li class="subtitle"><a href="/test">Josh Ocampo</a href="/test"></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-2.jpg"></li>
-                        <li class="topic"><a href="/test">Video</a></li>
-                        <li class="title"><a href="/test">How to Actually #DeleteFacebook</a></li>
-                        <li class="subtitle"><a href="/test">Abu Zafar</a href="/test"></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-3.jpg"></li>
-                        <li class="topic"><a href="/test">Credit Cards</a></li>
-                        <li class="title"><a href="/test">The Chase Sapphire Reserve Annual Fee Is Increasing</a></li>
-                        <li class="subtitle"><a href="/test">Lisa Rowan</a href="/test"></li>
-                    </ul>
-                </li>
-                <div class="clear"></div>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-4.jpg"></li>
-                        <li class="topic"><a href="/test">Will It Waffle?</a></li>
-                        <li class="title"><a href="/test">Cook SPAM in Your Waffle Maker</a></li>
-                        <li class="subtitle"><a href="/test">Claire Lower</a href="/test"></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-5.jpg"></li>
-                        <li class="topic"><a href="/test">Lifthacker</a></li>
-                        <li class="title"><a href="/test">How to Set Up Your 2020 Fitness Training Journal</a></li>
-                        <li class="subtitle"><a href="/test">Beth Skwarecki</a href="/test"></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul class="grid-item">
-                        <li><img src="img/grid-image-6.jpg"></li>
-                        <li class="topic"><a href="/test"></a></li>
-                        <li class="title"><a href="/test">How to Find The Best 'Which ___ Are You' Instagram Filters</a></li>
-                        <li class="subtitle"><a href="/test">David Murphy</a href="/test"></li>
-                    </ul>
-                </li>
+        <section class="grid-container">
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-1.jpg"></a></li>
+                <li class="topic"><a href="/test">Entertaining</a></li>
+                <li class="title"><a href="/test">Test Your Trivia Knowledge Using This Database of 'Jeopardy!' Questions</a></li>
+                <li class="subtitle"><a href="/test">Josh Ocampo</a></li>
+            </ul>
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-2.jpg"></a></li>
+                <li class="topic"><a href="/test">Video</a></li>
+                <li class="title"><a href="/test">How to Actually #DeleteFacebook</a></li>
+                <li class="subtitle"><a href="/test">Abu Zafar</a></li>
+            </ul>
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-3.jpg"></a></li>
+                <li class="topic"><a href="/test">Credit Cards</a></li>
+                <li class="title"><a href="/test">The Chase Sapphire Reserve Annual Fee Is Increasing</a></li>
+                <li class="subtitle"><a href="/test">Lisa Rowan</a></li>
+            </ul>
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-4.jpg"></a></li>
+                <li class="topic"><a href="/test">Will It Waffle?</a></li>
+                <li class="title"><a href="/test">Cook SPAM in Your Waffle Maker</a></li>
+                <li class="subtitle"><a href="/test">Claire Lower</a></li>
+            </ul>
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-5.jpg"></a></li>
+                <li class="topic"><a href="/test">Lifthacker</a></li>
+                <li class="title"><a href="/test">How to Set Up Your 2020 Fitness Training Journal</a></li>
+                <li class="subtitle"><a href="/test">Beth Skwarecki</a></li>
+            </ul>
+            <ul class="grid-item">
+                <li><a href="/test"><img src="img/grid-image-6.jpg"></a></li>
+                <li class="topic"><a href="/test"></a></li>
+                <li class="title"><a href="/test">How to Find The Best 'Which ___ Are You' Instagram Filters</a></li>
+                <li class="subtitle"><a href="/test">David Murphy</a></li>
             </ul>
         </section>
-        <div class="clear separator div-separator"></div>
+
+        <div class="clear separator div-separator no-margin"></div>
+
         <aside>
             <ul>
                 <li><span class="title">You</span> may also like</li>
@@ -131,39 +118,123 @@
                 <li><a class="subtitle">Gita Jackson</a></li>
             </ul>
         </aside>
-        <div>
-            <section>
-                section
-            </section>
+        <div class="main-container">
             <article>
+                <ul>
+                    <li><a href="spam.html"><img src="img/article0.png" /></a></li>
+                    <li class="topic">
+                        <a href="/test">Will It Waffle?</a>
+                    </li>
+                    <li class="title"><a href="spam.html">Cook SPAM in Your Waffle Maker</a></li>
+                    <li>
+                        <p>
+                            I have always been suspicious of artists who claim they can’t create anything of 
+                            value while sober. I’ve never found my drunk writing to be any better than my sober 
+                            writing, but I have to admit that some of my best ideas come to me once my inhibitions 
+                            have been lowered by alcohol. Could a sober mind create SPAM…
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <div class="separator div-separator"></div>
+
+            <article>
+                <ul>
+                    <li><a href="/test"><img src="img/article1.png" /></a></li>
+                    <li class="topic">
+                        <a href="/test">Offspring</a> <span class="subtitle">>></span> <a href="/test">Tell Us</a>
+                    </li>
+                    <li class="title"><a href="/test">Parenting Hacks That Backfired</a></li>
+                    <li>
+                        <p>
+                            As someone who actively seeks out and writes about parenting hacks every day,
+                            I’m always looking for shortcuts and tricks to make your lives (and my own) a tiny bit
+                            easier. But not all hacks are created equal, and a hack that works brilliantly for one
+                            parent might be a complete waste of time for another. Your mileage,…
+                        </p>
+                    </li>
+                </ul>
+            </article>
+
+            <div class="separator div-separator"></div>
+
+            <article>
+                <ul>
+                    <li><a href="/test"><img src="img/article2.png" /></a></li>
+                    <li class="topic">
+                        <a href="/test">App Directory</a></a>
+                    </li>
+                    <li class="title">
+                        <a href="/test">Schedule Your PC to Shut Down at a Specific Time With This Windows App</a>
+                    </li>
+                    <li>
+                        <p>
+                            Shutting down or restarting your PC every now and then is a good thing. It can even
+                            solve minor performance issues by clearing temporary files and freeing up memory—a
+                            classic troubleshooting technique—but many of us neglect this simple act of tech upkeep.
+                            It’s a lot easier to put a desktop or laptop to sleep (or…
+                        </p>
+                    </li>
+                </ul>
             </article>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class="separator div-separator no-margin"></div>
+
     </main>
     <div class="clear"></div>
+
     <footer>
         <section class="subscribe">
-            <img src="img/logo.png">
-            <p>lifehacker</p>
-            <p>Want Lifehacker's email newsletter?</p>
-            <input type="email" placeholder="Your email address">
-            <button>Subscribe</button>
-            <p>By subscribing you agree to our <a href="/test">Terms of Use</a> and <a href="/test">Privacy Policy</a>.</p>
+            <ul>
+                <li><img id="subscribe-logo" src="img/logo.png"></li>
+                <li>Want Lifehacker's email newsletter?</li>
+                <li><input id="email-input" type="email" placeholder="Your email address"></li>
+                <li><button id="subscribe-button">Subscribe</button></li>
+                <li id="terms">By subscribing you agree to our <a href="/test">Terms of Use</a> and <a href="/test">Privacy Policy</a>.</li>
+            </ul>
         </section>
-        
+        <section class="site-footer">
+            <ul>
+                <li>
+                    <ul class="nav nav-social-icons">
+                        <li><img src="img/facebook.png"></li>
+                        <li><img src="img/twitter.png"></li>
+                        <li><img src="img/instagram.png"></li>
+                        <li><img src="img/youtube.png"></li>
+                        <li><img src="img/rss.png"></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="nav footer-links">
+                        <li><a href="/test">About</a></li>
+                        <li><a href="/test">Need Help?</a></li>
+                        <li><a href="/test">Content Guide</a></li>
+                        <li><a href="/test">Privacy</a></li>
+                        <li><a href="/test">Terms of Use</a></li>
+                        <li><a href="/test">Advertising</a></li>
+                        <li><a href="/test">Jobs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="subtitle">More from our network</p>
+                    <ul class="nav nav-social-icons partner-icons">
+                        <li><img src="img/partner-icons/av.png"></li>
+                        <li><img src="img/partner-icons/ds.png"></li>
+                        <li><img src="img/partner-icons/gm.png"></li>
+                        <li><img src="img/partner-icons/jl.png"></li>
+                        <li><img src="img/partner-icons/jz.png"></li>
+                        <li><img src="img/partner-icons/kt.png"></li>
+                        <li><img src="img/partner-icons/rt.png"></li>
+                        <li><img src="img/partner-icons/tk.png"></li>
+                        <li><img src="img/partner-icons/ch.png"></li>
+                        <li><img src="img/partner-icons/on.png"></li>
+                        <li><img src="img/partner-icons/in.png"></li>
+
+                    </ul>
+                </li>
+                <li class="subtitle">&copy; 2020 <a href="/test">G/O Media Inc.</a></li>
+            </ul>
+        </section>
     </footer>
 </body>
