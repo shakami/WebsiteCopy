@@ -37,7 +37,6 @@ a {
     .nav li {
         font-weight: normal;
         display: inline;
-        padding: 0.3rem;
     }
 
 header a:hover {
@@ -45,8 +44,6 @@ header a:hover {
 }
 
 .partners-nav {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
     background-color: black;
     border-bottom: 4px solid var(--accent-color);
 }
@@ -96,17 +93,9 @@ header a:hover {
     padding-bottom: 2rem;
 }
 
-.grid-item li {
-    padding: 0.3rem;
-}
-
 /*------------ content sections ------------*/
 
 /*-- main section --*/
-
-main {
-    padding: 2rem;
-}
 
 .main-container {
     border-right: 1px solid var(--light-gray-color);
@@ -126,10 +115,6 @@ aside {
     max-width: 30%;
 }
 
-    aside img {
-        width: 25rem;
-    }
-
 /*-- article section --*/
 
 article {
@@ -140,11 +125,6 @@ article {
 
     article p {
         font-family: ElizabethSerif, Georgia, serif;
-        padding: 1rem;
-    }
-
-    article img {
-        width: 40rem;
     }
 
 /*------------ footer styles ------------*/
@@ -155,12 +135,7 @@ footer {
 
 .subscribe {
     background-color: var(--light-gray-color);
-    padding: 1rem;
 }
-
-    .subscribe li {
-        padding: 0.3rem;
-    }
 
 #subscribe-logo {
     width: 7rem;
@@ -174,7 +149,6 @@ footer {
     text-align: center;
     width: 20rem;
     max-width: 100%;
-    padding: 0.5rem;
 }
 
     #email-input:focus {
@@ -200,16 +174,7 @@ footer {
 }
 
 .site-footer {
-    padding: 2rem;
     background-color: var(--dark-gray-color);
-}
-
-    .site-footer li {
-        padding: 1rem;
-    }
-
-.nav-social-icons li {
-    padding: 0;
 }
 
 .nav-social-icons img {
@@ -226,8 +191,25 @@ footer {
     filter: invert(60%);
 }
 
-/*------------ color styles ------------*/
+/*------------ common padding ------------*/
 
+.nav li, .partners-nav, .grid-item li, .subscribe li, #email-input {
+    padding: 0.3rem;
+}
+
+article p, .subscribe, .site-footer li {
+    padding: 1rem;
+}
+
+main, .site-footer {
+    padding: 2rem;
+}
+
+.nav-social-icons li {
+    padding: 0;
+}
+
+/*------------ color styles ------------*/
 .light-gray {
     color: var(--light-gray-color);
 }
