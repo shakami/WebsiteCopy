@@ -26,33 +26,15 @@ h1 {
         padding: 0 0.5rem;
     }
 
-main {
-    margin-right: 30%;
-    border-right: 1px solid var(--light-gray-color);
-}
-
-#article-image img {
-    width: 52rem;
-}
-
 #tooltip-author-image {
     width: 3rem;
     padding: 0 0.6rem;
-}
-
-.date {
-    color: var(--medium-gray-color);
-    font-size: 0.9rem;
 }
 
 .tooltip-topic {
     text-transform: uppercase;
     color: black;
 }
-
-    .tooltip-topic:hover {
-        text-decoration: underline;
-    }
 
 article a {
     border-bottom: 2px solid var(--accent-color);
