@@ -12,9 +12,21 @@ h1 {
         width: 2rem;
     }
 
-.share-tooltip img {
-    border: solid 1px var(--light-gray-color);
-    width: 2rem;
+.share-tooltip li {
+    height: 30px;
+    border: 1px solid var(--light-gray-color);
+    border-left: none;
+}
+
+.share-tooltip li:first-child {
+    border-left: 1px solid var(--light-gray-color);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.share-tooltip li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .article-stats {
@@ -49,16 +61,19 @@ article a {
     margin-left: 6rem;
 }
 
-.share-subscribe img {
-    width: 2rem;
-    vertical-align: middle;
-}
-
-.share-subscribe span {
-    padding-right: 0.5rem;
+.share p {
+    padding-bottom: 1rem;
 }
 
 .share-subscribe {
     border: 1px solid var(--light-gray-color);
-    padding: 0 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    width: 7rem;
+    margin: 0 auto;
 }
+
+    .share-subscribe img {
+        vertical-align: middle;
+        width: 2rem;
+    }
