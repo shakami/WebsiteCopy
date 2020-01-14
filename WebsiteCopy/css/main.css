@@ -9,8 +9,9 @@
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: ProximaNovaCond, sans-serif;
     color: inherit;
+    font-style: normal;
 }
 
 img {
@@ -22,10 +23,9 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
+    a:hover {
+        text-decoration: underline;
+    }
 
 /*------------ nav styles ------------*/
 
@@ -40,9 +40,9 @@ a:hover {
         padding: 0.3rem;
     }
 
-    header a:hover {
-        text-decoration: none;
-    }
+header a:hover {
+    text-decoration: none;
+}
 
 .partners-nav {
     padding-top: 0.3rem;
@@ -51,9 +51,9 @@ a:hover {
     border-bottom: 4px solid var(--accent-color);
 }
 
-.partners-nav li:hover {
-    background-color: var(--dark-gray-color);
-}
+    .partners-nav li:hover {
+        background-color: var(--dark-gray-color);
+    }
 
 .nav-icon {
     height: 3.5rem;
@@ -68,9 +68,9 @@ a:hover {
     padding-bottom: 1.5rem;
 }
 
-.nav-logo-search li {
-    vertical-align: middle;
-}
+    .nav-logo-search li {
+        vertical-align: middle;
+    }
 
 .nav-bar li:hover {
     color: var(--accent-color);
@@ -81,14 +81,14 @@ a:hover {
     color: white;
 }
 
-.nav-bar .active:hover {
-    color: white;
-}
+    .nav-bar .active:hover {
+        color: white;
+    }
 
 /*------------ grid styles ------------*/
 
 .grid-container {
-    width: 66%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -126,9 +126,9 @@ aside {
     max-width: 30%;
 }
 
-aside img {
-    width: 25rem;
-}
+    aside img {
+        width: 25rem;
+    }
 
 /*-- article section --*/
 
@@ -138,18 +138,14 @@ article {
     line-height: 1.7rem;
 }
 
-article .title {
-    font-size: 1.5rem;
-}
+    article p {
+        font-family: ElizabethSerif, Georgia, serif;
+        padding: 1rem;
+    }
 
-article p {
-    font-family: ElizabethSerif, Georgia, serif;
-    padding: 1rem;
-}
-
-article img {
-    width: 40rem;
-}
+    article img {
+        width: 40rem;
+    }
 
 /*------------ footer styles ------------*/
 
@@ -162,10 +158,9 @@ footer {
     padding: 1rem;
 }
 
-.subscribe li {
-    font-size: 0.9rem;
-    padding: 0.3rem;
-}
+    .subscribe li {
+        padding: 0.3rem;
+    }
 
 #subscribe-logo {
     width: 7rem;
@@ -182,10 +177,10 @@ footer {
     padding: 0.5rem;
 }
 
-#email-input:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
+    #email-input:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
 
 #subscribe-button {
     background-color: var(--medium-gray-color);
@@ -196,30 +191,22 @@ footer {
     outline: none;
 }
 
-#subscribe-button:hover {
-    background-color: var(--dark-gray-color);
-}
-
-.subscribe a {
-    color: var(--accent-color);
-}
+    #subscribe-button:hover {
+        background-color: var(--dark-gray-color);
+    }
 
 #terms {
-    font-size: 0.8rem;
-    font-weight: lighter;
     margin-top: 1.5rem;
-    color: var(--medium-gray-color);
 }
 
 .site-footer {
     padding: 2rem;
     background-color: var(--dark-gray-color);
-    color: var(--medium-gray-color);
 }
 
-.site-footer li {
-    padding: 1rem;
-}
+    .site-footer li {
+        padding: 1rem;
+    }
 
 .nav-social-icons li {
     padding: 0;
@@ -229,14 +216,10 @@ footer {
     width: 2rem;
 }
 
-.nav-social-icons img:hover {
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-.footer-links li {
-    font-size: 0.9rem;
-}
+    .nav-social-icons img:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
 
 .partner-icons img {
     width: 1.5rem;
@@ -263,24 +246,29 @@ footer {
 
 /*------------ font styles ------------*/
 
-.bold {
+.bold, .block-text, .text-lg, .text-xl {
     font-weight: bold;
 }
 
 .block-text {
     text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: bold;
 }
 
-.title {
-    font-size: 1.2rem;
-    font-weight: bold;
+.text-xl {
+    font-size: 28px;
 }
 
-.subtitle {
-    font-size: small;
-    color: var(--medium-gray-color);
+.text-lg {
+    font-size: 20px;
+}
+
+.text-sm, .block-text {
+    font-size: 14px;
+}
+
+.text-xs {
+    font-size: 12px;
+    font-weight: 100;
 }
 
 /*------------ separators and floating ------------*/
