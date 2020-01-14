@@ -280,10 +280,6 @@ footer a:hover {
     margin: 0;
 }
 
-.clear {
-    clear: both;
-}
-
 .float-left {
     float: left;
 }
@@ -291,6 +287,21 @@ footer a:hover {
 .float-right {
     float: right;
 }
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
 
 .block-text {
     text-transform: uppercase;
