@@ -4,11 +4,12 @@ h1 {
 }
 
 .tooltip {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
     .tooltip img {
-        vertical-align: auto;
         width: 2rem;
     }
 
@@ -18,16 +19,16 @@ h1 {
     border-left: none;
 }
 
-.share-tooltip li:first-child {
-    border-left: 1px solid var(--light-gray-color);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
+    .share-tooltip li:first-child {
+        border-left: 1px solid var(--light-gray-color);
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
 
-.share-tooltip li:last-child {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+    .share-tooltip li:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 
 .article-stats {
     text-align: center;
@@ -61,9 +62,9 @@ article a {
     margin-left: 6rem;
 }
 
-.share p {
-    padding-bottom: 1rem;
-}
+    .share p {
+        padding-bottom: 1rem;
+    }
 
 .share-subscribe {
     border: 1px solid var(--light-gray-color);
@@ -71,6 +72,8 @@ article a {
     text-align: center;
     width: 7rem;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
     .share-subscribe img {
