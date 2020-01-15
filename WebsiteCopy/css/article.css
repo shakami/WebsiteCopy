@@ -13,7 +13,19 @@ h1 {
         width: 2rem;
     }
 
+    .tooltip img:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+.share-tooltip {
+    justify-content: center;
+}
+
 .share-tooltip li {
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
     height: 30px;
     border: 1px solid var(--light-gray-color);
     border-left: none;
@@ -58,23 +70,4 @@ article a {
         text-decoration: none;
     }
 
-.share {
-    margin-left: 6rem;
-}
 
-    .share p {
-        padding-bottom: 1rem;
-    }
-
-.share-subscribe {
-    border: 1px solid var(--light-gray-color);
-    border-radius: 5px;
-    text-align: center;
-    width: 7rem;
-    margin: 0 auto;
-}
-
-    .share-subscribe img {
-        vertical-align: middle;
-        width: 2rem;
-    }

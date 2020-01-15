@@ -27,148 +27,6 @@ a {
         text-decoration: underline;
     }
 
-/*------------ nav styles ------------*/
-
-.nav {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-    .nav li {
-        display: inline;
-    }
-
-header a:hover {
-    text-decoration: none;
-}
-
-.partners-nav {
-    background-color: black;
-    border-bottom: 4px solid var(--accent-color);
-}
-
-    .partners-nav li {
-        font-weight: normal;
-        font-stretch: condensed;
-    }
-
-        .partners-nav li:hover {
-            background-color: var(--dark-gray-color);
-        }
-
-.nav-icon {
-    height: 3.5rem;
-}
-
-#nav-bar-logo {
-    width: 10rem;
-}
-
-.nav-logo-search {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-    .nav-logo-search li {
-        vertical-align: middle;
-    }
-
-.nav-bar li:hover {
-    color: var(--accent-color);
-}
-
-.nav-bar .active {
-    background-color: var(--accent-color);
-    color: white;
-}
-
-    .nav-bar .active:hover {
-        color: white;
-    }
-
-/*------------ footer styles ------------*/
-
-footer {
-    text-align: center;
-}
-
-.subscribe {
-    background-color: var(--light-gray-color);
-}
-
-#subscribe-logo {
-    width: 7rem;
-}
-
-#email-input {
-    border: none;
-    outline: none;
-    background-color: var(--light-gray-color);
-    border-bottom: 1px solid black;
-    text-align: center;
-    width: 20rem;
-    max-width: 100%;
-}
-
-    #email-input:focus {
-        border-color: var(--accent-color);
-        color: var(--accent-color);
-    }
-
-#subscribe-button {
-    background-color: var(--medium-gray-color);
-    border: none;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.5rem 1.5rem;
-    outline: none;
-}
-
-    #subscribe-button:hover {
-        background-color: var(--dark-gray-color);
-    }
-
-#terms {
-    margin-top: 1.5rem;
-}
-
-.site-footer {
-    background-color: var(--dark-gray-color);
-}
-
-.nav-social-icons img {
-    width: 2rem;
-}
-
-    .nav-social-icons img:hover {
-        opacity: 0.7;
-        cursor: pointer;
-    }
-
-.partner-icons img {
-    width: 1.5rem;
-    filter: invert(60%);
-}
-
-/*------------ common padding ------------*/
-
-.nav li,
-.partners-nav,
-.grid-item li,
-.subscribe li,
-#email-input,
-.site-footer li {
-    padding: 0.3rem;
-}
-
-article p, .subscribe {
-    padding: 1rem;
-}
-
-.nav-social-icons li {
-    padding: 0;
-}
-
 /*------------ color styles ------------*/
 
 .light-gray {
@@ -253,6 +111,168 @@ article p, .subscribe {
     zoom: 1;
 }
 
+/*------------ nav styles ------------*/
+
+header a:hover {
+    text-decoration: none;
+}
+
+.nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto hidden;
+}
+
+    .nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav li {
+        flex-shrink: 0;
+    }
+
+.partners-nav {
+    width: auto;
+    background-color: black;
+    border-bottom: 4px solid var(--accent-color);
+    font-weight: normal;
+    font-stretch: condensed;
+}
+
+    .partners-nav a:hover {
+        background-color: var(--dark-gray-color);
+    }
+
+.nav-icon {
+    width: 2.5rem;
+}
+
+#nav-bar-logo {
+    width: 10rem;
+}
+
+.nav-logo-search {
+    padding: 1.5rem 0;
+}
+
+.nav-logo li:not(:first-child) {
+    display: none;
+}
+
+.nav-search-area li:not(:last-child) {
+    display: none;
+}
+
+.nav-bar li:hover {
+    color: var(--accent-color);
+}
+
+.nav-bar .active {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+    .nav-bar .active:hover {
+        color: white;
+    }
+
+/*------------ footer styles ------------*/
+
+footer {
+    text-align: center;
+}
+
+.subscribe {
+    background-color: var(--light-gray-color);
+}
+
+#subscribe-logo {
+    width: 7rem;
+}
+
+#email-input {
+    border: none;
+    outline: none;
+    background-color: var(--light-gray-color);
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 20rem;
+    max-width: 100%;
+}
+
+    #email-input:focus {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+#subscribe-button {
+    background-color: var(--medium-gray-color);
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    outline: none;
+}
+
+    #subscribe-button:hover {
+        background-color: var(--dark-gray-color);
+    }
+
+#terms {
+    margin-top: 1.5rem;
+}
+
+.site-footer {
+    background-color: var(--dark-gray-color);
+}
+
+    .site-footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+.nav-social-icons img {
+    width: 2rem;
+}
+
+    .nav-social-icons img:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+
+.partner-icons img {
+    width: 1.5rem;
+    filter: invert(60%);
+}
+
+/*------------ common padding ------------*/
+
+.nav li,
+.partners-nav,
+.grid-item li,
+.subscribe li,
+#email-input,
+.site-footer li {
+    padding: 0.3rem;
+}
+
+article p, .subscribe {
+    padding: 1rem;
+}
+
+.nav-social-icons li {
+    padding: 0;
+}
+
+.site-footer {
+    padding: 2rem 1rem;
+}
+
 /*------------ responsive styles ------------*/
 
 main {
@@ -271,6 +291,15 @@ aside {
     padding-top: 4rem;
 }
 
+    aside .ad {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    aside .vertical-ad {
+        display: none;
+    }
+
 article {
     padding: 2rem 0;
     line-height: 1.7rem;
@@ -281,6 +310,14 @@ article {
     }
 
 @media screen and (min-width: 700px) {
+    .nav-logo li:not(:first-child) {
+        display: contents;
+    }
+
+    .nav-search-area li:not(:last-child) {
+        display: contents;
+    }
+
     .grid-container {
         grid-template-columns: 33% 33% 33%;
     }
@@ -304,6 +341,14 @@ article {
         max-width: 30%;
     }
 
+        aside .vertical-ad {
+            display: inherit;
+        }
+
+        aside .horizontal-ad {
+            display: none;
+        }
+
     .site-footer li {
         padding: 1rem;
     }
@@ -321,9 +366,5 @@ article {
 
     article {
         margin-left: 3rem;
-    }
-
-    .site-footer {
-        padding: 2rem;
     }
 }
