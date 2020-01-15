@@ -86,51 +86,6 @@ header a:hover {
         color: white;
     }
 
-/*------------ grid styles ------------*/
-
-.grid-container {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-gap: 0.5rem;
-    padding-bottom: 2rem;
-}
-
-/*------------ content sections ------------*/
-
-/*-- main section --*/
-
-.main-container {
-    border-right: 1px solid var(--light-gray-color);
-    margin-right: 35%;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-}
-
-/*-- aside section --*/
-
-aside {
-    box-sizing: border-box;
-    position: absolute;
-    right: 5%;
-    padding-left: 1rem;
-    padding-top: 4rem;
-    max-width: 30%;
-}
-
-/*-- article section --*/
-
-article {
-    padding: 2rem 0;
-    margin-left: 5rem;
-    line-height: 1.7rem;
-}
-
-    article p {
-        font-family: ElizabethSerif, Georgia, serif;
-    }
-
 /*------------ footer styles ------------*/
 
 footer {
@@ -197,16 +152,17 @@ footer {
 
 /*------------ common padding ------------*/
 
-.nav li, .partners-nav, .grid-item li, .subscribe li, #email-input {
+.nav li,
+.partners-nav,
+.grid-item li,
+.subscribe li,
+#email-input,
+.site-footer li {
     padding: 0.3rem;
 }
 
-article p, .subscribe, .site-footer li {
+article p, .subscribe {
     padding: 1rem;
-}
-
-main, .site-footer {
-    padding: 2rem;
 }
 
 .nav-social-icons li {
@@ -214,6 +170,7 @@ main, .site-footer {
 }
 
 /*------------ color styles ------------*/
+
 .light-gray {
     color: var(--light-gray-color);
 }
@@ -294,4 +251,79 @@ main, .site-footer {
 
 .group {
     zoom: 1;
+}
+
+/*------------ responsive styles ------------*/
+
+main {
+    width: 90%;
+    margin: 0 auto 4rem auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+aside {
+    padding-top: 4rem;
+}
+
+article {
+    padding: 2rem 0;
+    line-height: 1.7rem;
+}
+
+    article p {
+        font-family: ElizabethSerif, Georgia, serif;
+    }
+
+@media screen and (min-width: 700px) {
+    .grid-container {
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .main-container {
+        border-right: 1px solid var(--light-gray-color);
+        margin-right: 35%;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+    }
+
+    #aside-separator {
+        display: none;
+    }
+
+    aside {
+        box-sizing: border-box;
+        position: absolute;
+        right: 5%;
+        padding-left: 1rem;
+        max-width: 30%;
+    }
+
+    .site-footer li {
+        padding: 1rem;
+    }
+
+    .nav-social-icons li {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .grid-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    article {
+        margin-left: 3rem;
+    }
+
+    .site-footer {
+        padding: 2rem;
+    }
 }

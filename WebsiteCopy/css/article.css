@@ -72,8 +72,6 @@ article a {
     text-align: center;
     width: 7rem;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
 }
 
     .share-subscribe img {
