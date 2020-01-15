@@ -72,6 +72,11 @@ a {
     font-weight: 100;
 }
 
+.text-tiny {
+    font-size: 10px;
+    font-weight: 100;
+}
+
 /*------------ separators and floating ------------*/
 
 .nav-separator {
@@ -118,7 +123,7 @@ header a:hover {
 }
 
 .nav {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -132,6 +137,7 @@ header a:hover {
     }
 
     .nav li {
+        padding: 0.3rem 0.5rem;
         flex-shrink: 0;
     }
 
@@ -156,7 +162,7 @@ header a:hover {
 }
 
 .nav-logo-search {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
 }
 
 .nav-logo li:not(:first-child) {
@@ -252,8 +258,6 @@ footer {
 
 /*------------ common padding ------------*/
 
-.nav li,
-.partners-nav,
 .grid-item li,
 .subscribe li,
 #email-input,
@@ -273,10 +277,49 @@ article p, .subscribe {
     padding: 2rem 1rem;
 }
 
+/*------------ tooltip styles ------------*/
+
+.tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .tooltip img {
+        width: 2rem;
+    }
+
+        .tooltip img:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+.article-stats {
+    text-align: center;
+}
+
+    .article-stats img {
+        width: 1.2rem;
+        padding: 0 0.5rem;
+    }
+
+.side-tooltip ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+}
+
+    .side-tooltip li {
+        margin-bottom: 1.2rem;
+        line-height: 1.2;
+    }
+
 /*------------ responsive styles ------------*/
 
 main {
-    width: 90%;
+    width: 97%;
     margin: 0 auto 4rem auto;
 }
 
@@ -301,6 +344,7 @@ aside {
     }
 
 article {
+    position: relative;
     padding: 2rem 0;
     line-height: 1.7rem;
 }
@@ -349,6 +393,14 @@ article {
             display: none;
         }
 
+    article {
+        padding: 2rem 0 2rem 4rem;
+    }
+
+    .side-tooltip ul {
+        display: inherit;
+    }
+
     .site-footer li {
         padding: 1rem;
     }
@@ -362,9 +414,5 @@ article {
     .grid-container {
         width: 80%;
         margin: 0 auto;
-    }
-
-    article {
-        margin-left: 3rem;
     }
 }

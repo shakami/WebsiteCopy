@@ -3,53 +3,29 @@ h1 {
     padding: 2rem 0;
 }
 
-.tooltip {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-    .tooltip img {
-        width: 2rem;
-    }
-
-    .tooltip img:hover {
-        opacity: 0.7;
-        cursor: pointer;
-    }
-
 .share-tooltip {
     justify-content: center;
 }
 
-.share-tooltip li {
-    padding: 5px;
-    display: inline-flex;
-    align-items: center;
-    height: 30px;
-    border: 1px solid var(--light-gray-color);
-    border-left: none;
-}
-
-    .share-tooltip li:first-child {
-        border-left: 1px solid var(--light-gray-color);
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+    .share-tooltip li {
+        padding: 5px;
+        display: inline-flex;
+        align-items: center;
+        height: 30px;
+        border: 1px solid var(--light-gray-color);
+        border-left: none;
     }
 
-    .share-tooltip li:last-child {
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
+        .share-tooltip li:first-child {
+            border-left: 1px solid var(--light-gray-color);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
 
-.article-stats {
-    text-align: center;
-}
-
-    .article-stats img {
-        width: 1.2rem;
-        padding: 0 0.5rem;
-    }
+        .share-tooltip li:last-child {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
 
 #tooltip-author-image {
     width: 3rem;
@@ -69,5 +45,3 @@ article a {
         color: var(--accent-color);
         text-decoration: none;
     }
-
-
