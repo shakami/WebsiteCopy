@@ -342,7 +342,7 @@ article {
     }
 
         aside .vertical-ad {
-            display: inherit;
+            display: block;
         }
 
         aside .horizontal-ad {
