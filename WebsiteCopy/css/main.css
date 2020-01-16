@@ -94,28 +94,6 @@ a {
     margin: 0;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.group {
-    zoom: 1;
-}
-
 /*------------ nav styles ------------*/
 
 header a:hover {
@@ -130,6 +108,10 @@ header a:hover {
     justify-content: space-between;
     overflow: auto hidden;
 }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
 
     .nav ul {
         display: flex;
@@ -234,6 +216,7 @@ footer {
 
 .site-footer {
     background-color: var(--dark-gray-color);
+    padding: 2rem 1rem;
 }
 
     .site-footer ul {
@@ -267,14 +250,6 @@ footer {
 
 article p, .subscribe {
     padding: 1rem 0;
-}
-
-.nav-social-icons li {
-    padding: 0;
-}
-
-.site-footer {
-    padding: 2rem 1rem;
 }
 
 /*------------ tooltip styles ------------*/
@@ -311,12 +286,12 @@ article p, .subscribe {
     left: 0;
 }
 
-    .side-tooltip li {
-        margin-bottom: 1.2rem;
-        line-height: 1.2;
-    }
+.side-tooltip li {
+    margin-bottom: 1.2rem;
+    line-height: 1.2;
+}
 
-/*------------ responsive styles ------------*/
+/*------------ document sections ------------*/
 
 main {
     width: 97%;
@@ -333,6 +308,10 @@ main {
 aside {
     padding-top: 4rem;
 }
+
+    aside img {
+        padding: 0.5rem 0;
+    }
 
     aside .ad {
         padding: 5rem 0;
@@ -352,6 +331,8 @@ article {
     article p {
         font-family: ElizabethSerif, Georgia, serif;
     }
+
+/*------------ responsive styles ------------*/
 
 @media screen and (min-width: 700px) {
     .nav-logo li:not(:first-child) {
