@@ -55,11 +55,11 @@ a {
     text-transform: uppercase;
 }
 
-.text-xl {
+.text-xl, h2 {
     font-size: 28px;
 }
 
-.text-lg {
+.text-lg, h3 {
     font-size: 20px;
 }
 
