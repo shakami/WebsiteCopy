@@ -45,3 +45,64 @@ article a {
         color: var(--accent-color);
         text-decoration: none;
     }
+
+.article-bottom h2 {
+    margin-bottom: 1rem;
+}
+
+.more-from {
+    margin: 2rem 0;
+}
+
+    .more-from li {
+        padding: 0.5rem;
+    }
+
+        .more-from li::before {
+            content: "\2022";
+            color: var(--accent-color);
+            width: 1rem;
+            display: inline-block;
+        }
+
+.comment img {
+    width: 2rem;
+}
+
+.comment .user-img {
+    width: 3rem;
+    padding: 0 0.5rem;
+}
+
+.comment p {
+    padding: 0.5rem 0 1rem 1rem;
+    font-family: ElizabethSerif, Georgia, serif;
+    line-height: 1.7rem;
+}
+
+.reply {
+    margin-left: 3rem;
+}
+
+    .reply .user-img {
+        width: 2rem;
+    }
+
+.reply-tooltip {
+    justify-content: flex-start;
+}
+
+.reply-tooltip li {
+    padding-right: 1rem;
+}
+
+.reply-tooltip img {
+    padding-left: 1rem;
+    width: 1.2rem;
+}
+
+@media screen and (min-width: 700px) {
+    .article-bottom {
+        padding: 2rem 0 2rem 4rem;
+    }
+}

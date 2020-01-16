@@ -266,7 +266,7 @@ footer {
 }
 
 article p, .subscribe {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .nav-social-icons li {
